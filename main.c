@@ -23,10 +23,13 @@ int main(int argc , char **argv) {
    q.size=0;
    int i;
    
-   //enqueue_struct(&q,7);
+   enqueue_struct(&q,1,2);
+   x=dequeue_struct(&q);
+            if(x!=0)
+            printf("cash %d\n",x);
    //printf("%d\n",dequeue_struct(&q));
 
-
+/*
  for(i=1;i<argc;i++){
         if(strcmp(argv[i],"x")==0){
             x=dequeue_struct(&q);
@@ -37,6 +40,6 @@ int main(int argc , char **argv) {
        enqueue_struct(&q, atoi(argv[i]));
            
         }
- }
+ }*/
   return 0;
 }

@@ -4,19 +4,20 @@
 //
 //  Created by Mingmanas Sivaraksa on 5/2/2566 BE.
 //
-#ifndef Node_h
+//#ifndef Node_h
 #define Node_h
 
-struct node
-{
-    int data;
-    struct node *nextPtr;
+struct node{
+   struct node* nextPtr;
+   int order_number;
+   int quantity;
 };
+
 
 typedef struct node Node;
 typedef struct node* NodePtr;
 
-
+/*
 void enqueue(NodePtr * head, NodePtr* tail, int x){
   NodePtr new_node=(NodePtr) malloc(sizeof(Node));
 if(new_node){ 
@@ -50,3 +51,4 @@ int dequeue(NodePtr* head, NodePtr* tail){
 
 
 #endif
+*/
