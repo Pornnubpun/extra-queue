@@ -21,7 +21,7 @@ void enqueue_struct(Queue* q, int ordernum, int qty){
     q->tailPtr=new_node;
     q->size++;
     
-    printf("%d %d\n",q->tailPtr->order_number,q->tailPtr->quantity);
+    printf("My order is %d \n",q->tailPtr->order_number);
   }
  
  
@@ -36,14 +36,17 @@ int dequeue_struct(Queue *q){
    int cash;
    if(o==1)
    {
+    printf("Ramen\n");
     cash=n*100;
    }
    else if (o==2)
    {
+    printf("Somtum\n");
     cash=n*20;
    }
    else if(o==3)
    {
+    printf("Fried Chicken\n");
     cash=n*50;
    }
    else cash=0;
