@@ -56,6 +56,6 @@ int i,customerid=1,c;
         }
  }
  printf("==========================================\n");
-//printf("There are %d ppl left in the queue");
+ printf("There are %d ppl left in the queue\n", q.size);
   return 0;
 }
